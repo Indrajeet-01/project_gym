@@ -11,24 +11,50 @@
             margin-right: 20%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f1ece8;
+            text-align: justify;
+           
         }
-        
+        ::selection{
+            background: yellow;
+        }
         .nimg{
             height: 300px;
             width: auto;
             
         }
-       
-        table tr{
+        h1{
+             font-weight: 900;
+        color: rgb(202, 75, 39);
+       text-shadow: 1px 1px 2px black, 0 0 25px rgb(119, 245, 153), 0 0 5px rgb(119, 245, 153);
+       }
+        h2{
+            color: rgb(34, 215, 37);
+       text-shadow: 1px 1px 2px black, 0 0 25px rgb(215, 12, 19), 0 0 5px rgb(215, 12, 19); 
+        }
+      table {
+        border-collapse: collapse;
+        
+      }
+        table tr:nth-child(even){
             background-color: aliceblue;
         }
-
+        table tr:nth-child(odd){
+            background-color: rgb(154, 196, 233);
+        }
+        table tr:hover{
+            background-color: rgb(103, 151, 239);
+            color:white;
+            transform: translateY(-2px);
+            
+        }
     </style>
 </head>
 <body>
+    <h1>Nutrition To Add To Your Gym Diet Plan</h1>
+    <p>There are mainly three macronutrients that play a crucial role in maintaining bodily functions and even promote changes in strength and composition – they are carbs, proteins, and fats and it is essential that we consume all three macros in ample quantities to optimize progress accordingly. Let’s see what are the vital nutrients you must include in your gym diet plan for muscle gain and weight loss.</p>
     <div class="carbo">
         <h2>Carbohydrates</h2>
-        <img src="/gym/images/carbohy.jpg"
+        <img src="/gym/images/carbohy.jpg" class="nimg">
         <p>Firstly, carbohydrates are the primary source of energy for the body and therefore play the most substantial role in fueling exercise. There are two different types of carbohydrates i.e. complex and simple. The names give an indication of the time taken to digest complex carbs that take a longer time period to digest than simple carbs.</p>
     </div>
     <div class="prot">
@@ -63,11 +89,11 @@
             <tbody>
                 <tr>
                     <td>Breakfast</td>
-                    <td>Oats Banana Pancakes with Protein Shake</td> 
+                    <td>Oats, Banana, Pancakes with Protein Shake</td> 
                 </tr>
                 <tr>
                     <td>Lunch</td>
-                    <td>Multigrain roti along with palak chicken and Avocado bell pepper salad</td>
+                    <td>Multigrain roti along with palak chicken <br> Avocado bell pepper salad</td>
                 </tr>
                 <tr>
                     <td>Pre-Workout Snack</td>
@@ -75,7 +101,7 @@
                 </tr>
                 <tr>
                     <td>Dinner<br>(Post-Workout)</td>
-                    <td>Brown rice, peas paneer curry, sprouts vegetable salad</td>
+                    <td>Brown rice<br> peas paneer curry<br>sprouts vegetable salad</td>
                 </tr>
             </tbody>
         </table>
@@ -86,11 +112,11 @@
             <tbody>
                 <tr>
                     <td>Breakfast</td>
-                    <td>Oatmeal with Greek Yogurt & Seasonal fruits Mango Juice</td> 
+                    <td>Oatmeal with Greek Yogurt <br> Seasonal fruits Mango Juice</td> 
                 </tr>
                 <tr>
                     <td>Lunch</td>
-                    <td>Multigrain roti, fish curry, vegetable salad/td>
+                    <td>Multigrain roti<br> fish curry<br> vegetable salad</td>
                 </tr>
                 <tr>
                     <td>Pre-Workout Snack</td>
@@ -98,7 +124,7 @@
                 </tr>
                 <tr>
                     <td>Dinner<br>(Post-Workout)</td>
-                    <td>Broken wheat khichidi along with carrot raita, egg white, and vegetable salad</td>
+                    <td>Broken wheat khichidi along with carrot raita<br>egg white, and vegetable salad</td>
                 </tr>
             </tbody>
         </table>
@@ -109,11 +135,11 @@
             <tbody>
                 <tr>
                     <td>Breakfast</td>
-                    <td>Poached Eggs, whole Grain Toast, Protien Shake</td> 
+                    <td>Poached Eggs<br> whole Grain Toast<br> Protien Shake</td> 
                 </tr>
                 <tr>
                     <td>Lunch</td>
-                    <td>Quinoa upma, chicken and broccoli salad</td>
+                    <td>Quinoa upma<br>chicken and broccoli salad</td>
                 </tr>
                 <tr>
                     <td>Pre-Workout Snack</td>
@@ -121,7 +147,7 @@
                 </tr>
                 <tr>
                     <td>Dinner<br>(Post-Workout)</td>
-                    <td>vegetable curry, brown rice, cucumber raita, Baby Potatoes, Chocolate Milk</td>
+                    <td>vegetable curry<br> brown rice, cucumber raita<br> Baby Potatoes, Chocolate Milk</td>
                 </tr>
             </tbody>
         </table>
@@ -136,7 +162,7 @@
                 </tr>
                 <tr>
                     <td>Lunch</td>
-                    <td>Grilled Chicken, Salad, Whole Grain Bread</td>
+                    <td>Grilled Chicken<br> Salad, Whole Grain Bread</td>
                 </tr>
                 <tr>
                     <td>Pre-Workout Snack</td>
@@ -144,7 +170,7 @@
                 </tr>
                 <tr>
                     <td>Dinner<br>(Post-Workout)</td>
-                    <td>Mwthi Chicken, Brown Rice, Broccoli, Protein Shake</td>
+                    <td>Mwthi Chicken, Brown Rice<br> Broccoli<br>Protein Shake</td>
                 </tr>
             </tbody>
         </table>
@@ -155,11 +181,11 @@
             <tbody>
                 <tr>
                     <td>Breakfast</td>
-                    <td>Scrambled Egg, Whole Grain Toast, Smoothie</td> 
+                    <td>Scrambled Egg<br>Whole Grain Toast<br> Smoothie</td> 
                 </tr>
                 <tr>
                     <td>Lunch</td>
-                    <td>Grilled chicken, Vegetable roti roll, Green Salad</td>
+                    <td>Grilled chicken<br>Vegetable roti roll, Green Salad</td>
                 </tr>
                 <tr>
                     <td>Pre-Workout Snack</td>
@@ -167,7 +193,7 @@
                 </tr>
                 <tr>
                     <td>Dinner<br>(Post-Workout)</td>
-                    <td>Chicken Stir Fry, Spring Onion, Peppers & Broccoli, Chocolate Milk</td>
+                    <td>Chicken Stir Fry, Spring Onion<br> Peppers & Broccoli<br> Chocolate Milk</td>
                 </tr>
             </tbody>
         </table>
@@ -178,11 +204,11 @@
             <tbody>
                 <tr>
                     <td>Breakfast</td>
-                    <td>Oatmeal, Whole Grain Toast, Oranje Juice</td> 
+                    <td>Oatmeal<br> Whole Grain Toast<br>Oranje Juice</td> 
                 </tr>
                 <tr>
                     <td>Lunch</td>
-                    <td>Whole Grain Chicken wrap, Black Beans, Peppers & Greek Yoguri</td>
+                    <td>Whole Grain Chicken wrap<br> Black Beans, Peppers & Greek Yoguri</td>
                 </tr>
                 <tr>
                     <td>Pre-Workout Snack</td>
@@ -190,7 +216,7 @@
                 </tr>
                 <tr>
                     <td>Dinner<br>(Post-Workout)</td>
-                    <td>Keema Bhurji and multigrain roti, Sweet Potato,Protein Shake</td>
+                    <td>Keema Bhurji and multigrain roti<br> Sweet Potato<br>Protein Shake</td>
                 </tr>
             </tbody>
         </table>
@@ -213,7 +239,7 @@
                 </tr>
                 <tr>
                     <td>Dinner<br>(Post-Workout)</td>
-                    <td>Fish curry, Boiled green peas salad, Brown Rice, Garden Peas, Milk</td>
+                    <td>Fish curry<br> Boiled green peas salad<br> Brown Rice, Garden Peas, Milk</td>
                 </tr>
             </tbody>
         </table>
