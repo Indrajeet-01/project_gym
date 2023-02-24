@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color: #f1ece8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .signUp{
+            padding: 100px;
+            border: 4px solid double rgb(37, 230, 37);
+            
+        }
+        
+        legend{
+            color: #0a7114;
+            font-size: 28px;
+            
+        }
+       
+        label{
+            color: rgb(27, 2, 71);
+            font-size: 20px;
+            box-sizing: border-box;
+            text-decoration: underline;
+        }        
+        input[type=text],input[type=password],input[type=email],input[type=number],input[type=date]{
+            width:40%;
+            padding: 12px 20px;
+            margin:8px 0;
+            display: inline-block;
+            border:3px solid #660880;
+            border-radius: 4px;
+            background-color: rgb(230, 240, 211);
+        }
+        
+        #submit{
+            text-align: center;
+        }
+        input[type=submit]{
+            font-size: 20px;
+            background-color: #0a7114;
+           color: white;
+           padding: 14px 20px;
+          margin: 8px 0;
+         border: none;
+          border-radius: 4px;
+         cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="signUp">
+    <form>
+        <fieldset >
+        <legend>Personal Information</legend>
+            <label for="'name">Name: </label><br>
+            <input type="text" placeholder="Enter Your Name" id="'name">
+            <br><br>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" placeholder="Enter Your Email">   
+            <br><br>
+            <label for="phone">Phone: </label><br>
+            <input type="number" id="phone" placeholder="Enter Your Phone Number">
+            <br><br>
+            <label for="dob">Date Of Birth:</label><br>
+            <input type="date" id="dob" placeholder="Enter Your Date of Birth">
+            <br><br>
+            <div class="gend">
+            <label for="gend">Select Your Gender:</label><br>
+            <input type="radio" name="gender">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender">
+            <label for="female">Female</label><br>
+            <input type="radio" name="gender">
+            <label for="others">Others</label>  
+            </div><br> 
+            <label for="password">Password: </label><br>
+            <input type="password" id="password" placeholder="Enter Password">
+            <br><br>
+            <label for="confirm-password">Confirm Password: </label><br>
+            <input type="password" id="confirm-password" placeholder="Enter Password">
+            <br><br>
+            <input type="checkbox" required id="toc">
+            <label for="toc">I agree to the Terms of Services</label>
+            <br><br>
+            <div id="submit">
+            <input type="submit" value="Sign Up">
+        </div> 
+        </fieldset>
+        
+    
+    </form>
+</div>
+</body>
+</html>
