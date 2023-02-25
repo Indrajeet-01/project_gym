@@ -5,8 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       
+       section{
+        position:relative;
+        width: 100%;
+        min-height: 100vh;
+        background: url(/gym/images/homeimg1.jpg) center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 100px;
+       }
+       header{
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       header .navigation{
+        position:relative;
+        display:flex;
+
+       }
+       header .navigation li{
+        list-style-type: none;
+        
+       }
+       header .navigation li a{
+        display: inline-block;
+        color: white;
+        margin-right: 40px;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: 600;
+        text-shadow: -1px 0 0 red;
+        
+       }
+       header .navigation li a:hover{
+        color: #03a9f4;
+       }
+       .content{
+        color: white;
+        max-width: 600px;
+       }
+       .content .contentBox h2{
+            font-size: 4em;
+            line-height: 1em;
+            text-shadow: -2px 0 0 red;
+       }
+       .content .contentBox p{
+        color: #cbf141;
+        font-style: italic;
+       }
+       .content .contentBox p::first-letter{
+        color: #14b2e2;
+        font-size: 24px;
+       }
+       .content .contentBox a{
+        color: whitesmoke;
+        display: inline-block;
+        padding: 10px 30px;
+        background: #e9179c;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+       }
+       .social{
+        position: absolute;
+        display: flex;
+        bottom: 30px;
+       }
+       .social li{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .social li a{
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        
+       }
+       @media screen and (max-width:991px){
+        header{
+            padding: 15px 40px;
+
+        }
+        section{
+            padding: 40px;
+        }
+        .content .contentBox h2{
+             font-size: 2.5em;
+        }
+        .content .contentBox p{
+             font-size: 1em;
+        }
+      
+       }
+    </style>
 </head>
 <body>
-    
+    <section>
+        <header>
+            <a href="#" class="logo"><img src="/gym/images/logo.jpeg" style="height: 100px; width: 100px;"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nutrition</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="contentBox">
+                <h2>Build Perfect Body<br>With Clean Mind</h2>
+                <p>Mental will is a Muscle that needs Exercise, Just like the Muscles of the Body</p>
+                <p>ONE OF THE GREATEST MOMENTS IN LIFE IS REALIZING THAT TWO WEEKS AGO, YOUR BODY COULDN'T DO WHAT IT JUST DID!</p>
+                <p>SUCCESS IS THE SUM OF SMALL EFFORTS REPEATED DEY IN AND DAY OUT</p>
+                <a href="#">Get Started</a>
+            </div>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="/gym/images/instagram_icon.png"></a></li>
+            <li><a href="#"><img src="/gym/images/whatsapp_icon.png"></a></li>
+        </ul>
+    </section>
 </body>
 </html>
