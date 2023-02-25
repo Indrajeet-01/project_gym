@@ -6,10 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <style>
+        *{
+        
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
         body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f1ece8;
+           background-color: #f1ece8;
+            
         }
+        section{
+        position:relative;
+        width: 100%;
+        min-height: 100vh;
+       
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+       }
+       header{
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: -webkit-sticky;
+        position: sticky;
+       }
+       header .navigation{
+        position:relative;
+        display:flex;
+
+       }
+       header .navigation li{
+        list-style-type: none;
+        
+       }
+       header .navigation li a{
+        display: inline-block;
+        color: white;
+        margin-right: 40px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        text-shadow: -1px 0 0 red;
+        
+       }
+       header .navigation li a:visited{
+        color: white;
+       }
+       header .navigation li a:hover{
+        color: #03a9f4;
+       }
+       header .navigation li a:active{
+        color: #0a8625;
+       }
+       .logo{
+        transform: scale(0.7);
+       }
          .blogEX{
             margin-left: 20%;
             margin-right: 20%;
@@ -21,17 +82,50 @@
             background: yellow;
         }
         h1{
-             font-weight: 900;
-        color: rgb(202, 75, 39);
+            font-size: 30px;
+             font-weight: 400;
+        color: red;
        text-shadow: 1px 1px 2px black, 0 0 25px rgb(119, 245, 153), 0 0 5px rgb(119, 245, 153);
        }
         h2{
+            font-weight: 400;
             color: rgb(34, 215, 37);
-       text-shadow: 1px 1px 2px black, 0 0 25px rgb(215, 12, 19), 0 0 5px rgb(215, 12, 19); 
+       text-shadow: 1px 1px 2px black, 0 0 25px rgb(65, 27, 202), 0 0 5px rgb(75, 20, 205); 
         }
+        .social{
+        position: absolute;
+        display: flex;
+        margin-bottom: 0px;
+        
+       }
+       .social li{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .social li a{
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        
+       }
+       #cprt{
+        color: rgb(94, 25, 206);
+       }
     </style>
 </head>
 <body>
+    <section>
+        <header>
+            <a href="#" class="logo"><img src="/images/logo.png" style="height: 100px; width: 100px;"></a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html" target="_blank">Nutrition</a></li>
+                <li><a href="blog.html" target="_blank">Blog</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </header>
     <div class="blogEX">
     <div class="benefits">
         <h1>Benefits of bodyweight exercise</h1>
@@ -166,5 +260,13 @@
         </ol>
     </div>
 </div>
+<footer>
+    <ul class="social">
+        <li><a href="https://www.instagram.com/bodyexercise_tips/" target="_blank"><img src="images/instagram_icon.png"></a></li>
+        <li><a href="#"><img src="/images/whatsapp_icon.png"></a></li>
+        <li id="cprt">© Copyright-2023</li>
+    </ul>
+    </footer>
+</section>
 </body>
 </html>

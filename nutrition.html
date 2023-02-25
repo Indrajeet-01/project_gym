@@ -6,11 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition</title>
     <style>
+        *{
+        
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
         body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f1ece8;
+           background-color: #f1ece8;
+            
         }
+        section{
+        position:relative;
+        width: 100%;
+        min-height: 100vh;
+       
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+       }
+       header{
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: -webkit-sticky;
+        position: sticky;
+       }
+       header .navigation{
+        position:relative;
+        display:flex;
+
+       }
+       header .navigation li{
+        list-style-type: none;
+        
+       }
+       header .navigation li a{
+        display: inline-block;
+        color: white;
+        margin-right: 40px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        text-shadow: -1px 0 0 red;
+        
+       }
+       header .navigation li a:visited{
+        color: white;
+       }
+       header .navigation li a:hover{
+        color: #03a9f4;
+       }
+       header .navigation li a:active{
+        color: #0a8625;
+       }
+       .logo{
+        transform: scale(0.7);
+       }
         .nutrients{
+           
             margin-left: 20%;
             margin-right: 20%;
             text-align: justify;
@@ -25,13 +87,15 @@
             
         }
         h1{
-             font-weight: 900;
-        color: rgb(202, 75, 39);
+            font-size: 30px;
+             font-weight: 400;
+        color: red;
        text-shadow: 1px 1px 2px black, 0 0 25px rgb(119, 245, 153), 0 0 5px rgb(119, 245, 153);
        }
         h2{
+            font-weight: 400;
             color: rgb(34, 215, 37);
-       text-shadow: 1px 1px 2px black, 0 0 25px rgb(215, 12, 19), 0 0 5px rgb(215, 12, 19); 
+       text-shadow: 1px 1px 2px black, 0 0 25px rgb(65, 27, 202), 0 0 5px rgb(75, 20, 205); 
         }
       table {
         border-collapse: collapse;
@@ -49,9 +113,40 @@
             transform: translateY(-2px);
             
         }
+        .social{
+        position: absolute;
+        display: flex;
+        margin-bottom: 0px;
+        
+       }
+       .social li{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .social li a{
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        
+       }
+       #cprt{
+        color: rgb(94, 25, 206);
+       }
     </style>
 </head>
 <body>
+    <section>
+    <header>
+        <a href="#" class="logo"><img src="/images/logo.png" style="height: 100px; width: 100px;"></a>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nutrition.html" target="_blank">Nutrition</a></li>
+            <li><a href="blog.html" target="_blank">Blog</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </header>
     <div class="nutrients">
     <h1>Nutrition To Add To Your Gym Diet Plan</h1>
     <p>There are mainly three macronutrients that play a crucial role in maintaining bodily functions and even promote changes in strength and composition – they are carbs, proteins, and fats and it is essential that we consume all three macros in ample quantities to optimize progress accordingly. Let’s see what are the vital nutrients you must include in your gym diet plan for muscle gain and weight loss.</p>
@@ -257,5 +352,13 @@
     <p>Similarly, many simple carbohydrate foods do not have great nutritional value and contain a high amount of sugar. While they may be useful for a short term energy boost, consuming a large number of simple carbs can be detrimental.</p>
     <p>Although technically not a food, alcohol is a substance that should also be limited as far as possible. Since there is much research to indicate that alcohol negatively impacts recovery and may even interfere with the muscle-building process, it might be good to stay away from it. So, it is not great to include it when you are detoxifying with your gym diet plan.</p>
 </div>
+<footer>
+    <ul class="social">
+        <li><a href="https://www.instagram.com/bodyexercise_tips/" target="_blank"><img src="images/instagram_icon.png"></a></li>
+        <li><a href="#"><img src="/images/whatsapp_icon.png"></a></li>
+        <li id="cprt">© Copyright-2023</li>
+    </ul>
+    </footer>
+</section>
 </body>
 </html>
